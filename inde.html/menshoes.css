@@ -1,0 +1,217 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Times New Roman', Times, serif;
+}
+body{
+    
+    background-blend-mode: darken;
+    background-size: cover;
+    height: 2000px;
+}
+
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.container h1{
+    color:black;
+    margin-left: 12px;
+    cursor: pointer;
+    
+}
+.navbar ul li{
+    display: inline-block;
+    padding: 18px;
+    text-transform: uppercase;
+    
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    color: black;
+    padding: 4px;
+    transition: 3.5s;
+
+}
+
+.navbar ul li a:hover{
+    box-shadow: 0 3px 50px rgb(172, 55, 55) inset, 0 3px 50px rgb(172, 55, 55) inset,
+    0 3px 50px rgb(172, 55, 55) inset, 0 3px 50px rgb(172, 55, 55) inset;
+}
+.navbar .signin{
+    padding: 10px;
+    background-color: coral;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.header {
+display: flex;
+ color: coral;
+ position: absolute;
+ top:12%;
+ left: 43%;
+
+}
+.sidebar{
+    position: fixed;
+    left:0;
+    bottom:0;
+    top:80px;
+    background-color:white;
+    width: 72px;
+    z-index: 200px;
+    padding-top: 5px;
+    padding-right: 32px;
+}
+.side{
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-size: large;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+   
+.shoes-grid{
+display: grid;
+grid-template-columns: 1fr 1fr 1fr;
+column-gap: 16px;
+row-gap: 40px;
+margin-top: 7%;
+margin-left: 13%;
+}
+
+.shoepic{
+    width: 70%;
+}
+
+.shoe-desc, .shoe-use{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 18px;
+}
+.shoe-use{
+    font-size: 12px;
+}
+
+.home{
+    font-size: 17px;
+    margin-top: 10%;
+    margin-left: 80%;
+    cursor: pointer;
+   
+}
+.homebutton{
+    font-size: 17px;
+    margin-top: 10%;
+    margin-left: 72%;
+    cursor: pointer;
+    background-color:white;
+    color: rgb(90, 56, 56);
+    font-size: 12px;
+    border-radius: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 5px;
+    padding-top: 5px;
+
+}
+.foot{
+    margin-top: 80%;
+    background-color: brown;
+    padding: 70px 0;
+   
+   
+}
+ul{
+    list-style: none;
+}
+.cont{
+    max-width: 1220px;
+    margin: auto;
+    margin-left: 13%;
+
+}
+.row{
+    display: flex;
+    flex-wrap:wrap;
+}
+.footer-col{
+    width: 25%;
+    padding: 0 15px;
+    display: inline-block;
+}
+.footer-col h4{
+    font-size: 18px;
+    color: aliceblue;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    font-weight: 500;
+    position: relative;
+}
+.footer-col h4::before{
+    content: '';
+    position:absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: rgb(236, 236, 236);
+    height: 2px;
+    width: 50px;
+    box-sizing: border-box;
+}
+.footer-col ul:not(:last-child){
+    margin-bottom: 10px;
+}
+.footer-col ul li a{
+    font-size: 16px;
+    text-transform: capitalize;
+    color: white;
+    text-decoration: none;
+    font-weight: 300;
+    color: white;
+    display: block;
+    margin:11px ;
+    transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+    color: #ffffff;
+    padding-left: 10px;
+}
+
+.footer-col .social-links a{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: white;
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: rgb(97, 12, 12);
+    transition: all 0.5s ease;
+
+}
+
+.footer-col .social-links a:hover{
+    color: rgba(90, 89, 45, 0.103);
+    background-color: #ebe2e2 ;
+}
+
+@media(max-width: 767px){
+    .footer-col{
+        width: 50%;
+        margin-bottom:30px;
+    }
+}
+@media(max-width: 574px){
+    .footer-col{
+        width: 100%;
+    
+    }
+}
